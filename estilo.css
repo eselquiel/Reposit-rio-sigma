@@ -1,0 +1,28 @@
+* body{
+    margin: 0px;
+    padding: 0px;
+}
+#top{
+    width: 980px;
+    height: 100px;
+    background-color: deeppink;
+    margin: auto;
+}
+#logo{
+    width: 200px;
+    height: 100px;
+    background-color: springgreen;
+    float: left;
+}
+#menu{
+    width: 780px;
+    height: 100px;
+    background-color: cornsilk;
+    float: right;
+}
+#banner{
+    width: 700px;
+    height: 400px;
+    background-color: darkkhaki;
+    margin: auto;
+}
