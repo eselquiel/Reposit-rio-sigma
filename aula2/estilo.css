@@ -15,6 +15,10 @@
     float: left;
     background-color: red;
 }
+#logo img{
+    float: left;
+    padding: 10px 10px 10px 10px;
+}
 #menu{
     width: 780px;
     height: 200px;
@@ -24,8 +28,12 @@
     word-spacing: 10px;
 }
 #menu a{
-    color: white;
+    color: blue;
     text-decoration: none;
+    margin-top: 20px;
+}
+.spaceTop{
+    padding-top: 20px;
 }
 #banner{
     width: 700px;
