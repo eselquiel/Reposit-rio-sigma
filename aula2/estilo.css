@@ -1,68 +1,79 @@
+/* ...existing code... */
 * body{
     margin: 0px;
     padding: 0px;
     font-family: "Raleway", sans-serif;
+    background-color: white;
 }
 #topContainer{
     width: 980px;
     height: 200px;
     margin: auto;
-    background-color: black;
+    background-color: white;
 }
 #logo{
     width: 200px;
     height: 200px;
     float: left;
-    background-color: red;
+    background-color: white;
 }
 #logo img{
     float: left;
     padding: 10px 10px 10px 10px;
+    background-color: white;
 }
 #menu{
     width: 780px;
     height: 200px;
     float: right;
-    background-color: cyan;
+    background-color: white;
     text-align: center;
     word-spacing: 10px;
 }
 #menu a{
-    color: blue;
+    color: black;
     text-decoration: none;
     margin-top: 20px;
+    background-color: white;
+}
+#menu a:hover{
+    color: blue;
+    text-decoration: underline;
+    background-color: white;
 }
 .spaceTop{
     padding-top: 20px;
+    background-color: white;
 }
 #banner{
-    width: 700px;
+    width: 100%;
     height: 400px;
-    background-color: purple;
+    background-color: white;
     margin: auto;
     margin-top: 50px;
 }
 #content{
-    width: 980px;
+    width: 100%;
     height: 500px;
-    background-color: chartreuse;
+    background-color: white;
     margin: auto;
 }
 #left{
     width: 450px;
     height: 500px;
     float: left;
-    background-color: yellow;
+    background-color: white;
 }
 #right{
     width: 450px;
     height: 500px;
-    background-color: pink;
+    background-color: white;
     float: right;
 }
 #rodape{
     width: 980px;
     height: 50px;
-    background-color: gold;
+    background-color: white;
     margin: auto;
 }
+/* ...existing code... */
