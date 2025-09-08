@@ -1,0 +1,94 @@
+* body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Raleway", sans-serif;
+    background-color: white;
+}
+#topContainer{
+    width: 980px;
+    height: 200px;
+    margin: auto;
+    background-color: #8A2BE2;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: #8A2BE2;;
+}
+#logo img{
+    float: left;
+    padding: 10px 10px 10px 10px;
+    background-color: #40E0D0;
+}
+#menu{
+    width: 780px;
+    height: 200px;
+    float: right;
+    background-color: #7FFF00;
+    text-align: center;
+    word-spacing: 10px;
+}
+#menu a{
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    background-color: #FF69B4;
+}
+#menu a:hover{
+    color: blue;
+    text-decoration: underline;
+    background-color: #FFA500;
+}
+.spaceTop{
+    padding-top: 20px;
+    background-color: #00CED1;
+}
+#banner{
+    width: 980px;
+    height: 300px;
+    background-color: #ADFF2F;
+    margin: auto;
+    margin-top: 50px;
+}
+#content{
+    width: 980px;
+    height: 300px;
+    background-color: #DC143C;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+}
+#left{
+    width: 320px;
+    height: 300px;
+    background-color: red;
+    box-sizing: border-box;
+    float: none;
+}
+#right{
+    width: 320px;
+    height: 300px;
+    background-color: blue;
+    box-sizing: border-box;
+    float: none;
+}
+#rodape{
+    width: 980px;
+    height: 50px;
+    background-color: #00FF7F;
+    margin: auto;
+}
+.message{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.button{
+    width: 100%;
+    height: 30px;
+    background-color: lime;
+    padding: 35px 50px;
+    color: white
+}
