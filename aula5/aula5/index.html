@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+      Nome: <input type="text" id="nome">
+      Selecione:
+        <select id="cursos">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+        </select>
+            Apple <input type="radio" id="apple" value="Apple" name="sistema">
+    Linux <input type="radio" value="linux" id="sistema" name="sistema">
+
+        <input type="submit" value="Enviar" onclick = "printVariables()">
+    </form>
+
+
+    <script>
+        function printVariables() {
+            var nome = document.getElementById('nome').value;
+            var cursos = document.getElementById('cursos').value;
+
+            var apple = document.getElementById('apple');
+            var linux = document.getElementById('linux');
+            var resultado = "";
+
+            if(apple.checked){
+                resultado = apple.value;
+            }else if(linux.checked){
+                resultado = linux.value;
+            }
+
+            alert(nome + " " + cursos + " " + resultado);
+
+            //document.write(nome + resultado);
+        }
+    </script>
+
+</body>
+</html>

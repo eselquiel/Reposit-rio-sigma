@@ -36,5 +36,33 @@
         <img src="cabeleireiro.jpg" width="324"/>
         <img src="cabeleireiro.jpg" width="324"/>
     </div>
+
+<div id="containerContato">
+    <div style="display: flex; height: 500px;">
+        <div id="leftContato" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h3>Entre em contato</h3>
+            <form id="formContato" style="display: flex; flex-direction: column; gap: 10px; width: 80%;">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="text" placeholder="Telefone" required>
+                <textarea cols="30" rows="5" placeholder="Mensagem"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div id="leftContato"></div>
+        <div id="rightContato">
+            <h3>Localização</h3>
+            <div style="width: 90%; box-shadow: 0 2px 8px rgba(0,0,0,0.15); overflow: hidden; margin-top: 10px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.8588139389435!2d-51.200391041035!3d-29.16883248765583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea3200efac6ed%3A0x7cd369232232c419!2sSenac%20Caxias%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1757764076059!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="350" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

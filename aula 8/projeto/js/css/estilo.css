@@ -1,0 +1,70 @@
+* body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+#topo-porcento{
+    width: 100%;
+    height: 115px;
+    background-color: rgb(3, 3, 87);
+}
+#topo{
+    width: 980px;
+    height: 115px;
+    margin: auto;
+}
+#logo{
+    width: 200px;
+    height: 115px;
+    float: left;
+}
+#menu{
+    width: 780px;
+    height: 115px;
+    float: right;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    word-spacing: 20px;
+}
+#menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#menu a:hover{
+    color: brown;
+}
+.espacamento{
+    padding-top: 40px;
+}
+#animacao{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+#centraliza{
+    width: 980px;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+}
+#containerTitulo{
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#rodape-porcento{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+#rodape{
+    width: 980px;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    margin: auto;
+}

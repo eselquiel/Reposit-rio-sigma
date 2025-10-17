@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     LAMPADA: <img src="acesa.jpg" id="lampada" width="200px">
+     <form>
+        <input type="button" value="Ligar" onclick="on()">
+        <input type="button" value="Desligar" onclick="off()">
+     </form>
+ 
+    <script>
+        function on(){
+            document.getElementById("lampada").src = "acesa.jpg";
+        }
+        function off(){
+            document.getElementById("lampada").src = "apagada.png";
+        }
+    </script>
+ 
+</body>
+</html>
