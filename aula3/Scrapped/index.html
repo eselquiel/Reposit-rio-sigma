@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="site-header" style="width:100%;max-width:760px;display:flex;align-items:center;justify-content:space-between;margin:0 20px 18px;">
+    <h1 class="logo" style="font-size:1.1rem;margin:0;color:#0b63d6;">Calculadora Web</h1>
+
+    <nav aria-label="Calculator modes">
+      <button id="mode-sum" class="active" data-mode="sum">Sum / Subtract</button>
+      <button id="mode-mul" data-mode="mul">Multiply / Divide</button>
+      <button id="mode-money" data-mode="money">Money (BRL)</button>
+    </nav>
+  </header>
+
+  <main style="width:100%; max-width:760px; display:flex; justify-content:center; margin:0 20px;">
+    <div class="calc" id="calculator">
+      <div class="display" id="display">0</div>
+
+      <div class="ops" id="opArea"></div>
+
+      <div class="kbd" id="keys">
+        <button data-key="1">1</button>
+        <button data-key="2">2</button>
+        <button data-key="3">3</button>
+        <button data-key="C" class="small">C</button>
+
+        <button data-key="4">4</button>
+        <button data-key="5">5</button>
+        <button data-key="6">6</button>
+        <button data-key="=" class="small">=</button>
+
+        <button data-key="7">7</button>
+        <button data-key="8">8</button>
+        <button data-key="">9</button>
+        <button data-key="0">0</button>
+
+        <button data-key="." class="small">.</button>
+        <button data-key="+/-" class="small">+/-</button>
+        <button data-key="del" class="small">DEL</button>
+        <button data-key="enter" class="small" style="display:none">enter</button>
+      </div>
+
+      <div class="note">Press = multiple times to repeat the last operation</div>
+    </div>
+  </main>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>

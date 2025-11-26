@@ -1,0 +1,129 @@
+* body {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa;
+  color: #111;
+}
+
+.site-header {
+  padding: 10px 14px;
+  background: linear-gradient(180deg,#ffffff,#f5faff);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  width: 100%;
+  max-width: 760px;
+  margin: 0 20px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav[aria-label="Calculator modes"] {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px;
+  background: rgba(11,99,214,0.06);
+  border-radius: 8px;
+}
+
+nav button {
+  border: none;
+  background: transparent;
+  color: #0b63d6;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+nav button.active {
+  background: #0b63d6;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+}
+
+.site-header .logo {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #0b63d6;
+}
+
+.calc {
+  width: 320px;
+  border: 1px solid #d0d6dc;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  background: #fff;
+}
+
+/* Display */
+.display {
+  height: 56px;
+  background: #0f1724;
+  color: rgb(0, 255, 0); /* green-ish */
+  padding: 10px;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+/* Numeric keypad */
+.kbd {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+.kbd button {
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #c1c7cd;
+  background: #fff;
+  border-radius: 6px;
+  transition: background .12s, transform .06s;
+}
+.kbd button:active { transform: translateY(1px); }
+.kbd .small { font-size: .9rem; }
+
+/* Operator area: buttons span the full width and share space */
+.ops {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  justify-content: stretch;
+}
+.ops button {
+  flex: 1 1 0;
+  padding: 12px 10px;
+  font-size: 1.05rem;
+  border: 1px solid #bbb;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.ops button:active { transform: translateY(1px); }
+
+/* helper text */
+.note {
+  font-size: .8rem;
+  color: #444;
+  margin-top: 10px;
+  text-align: center;
+}
