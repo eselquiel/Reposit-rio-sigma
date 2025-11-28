@@ -24,8 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.purchase-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      showNotification('Purchase Complete!');
-      console.log('Purchase Complete!');
+      showNotification('Purchase in progress, please wait...');
+      btn.disabled = true;
+      setTimeout(() => {
+        showNotification('Purchase complete!');
+        btn.disabled = false;
+      }, 4000);
     });
   });
 });

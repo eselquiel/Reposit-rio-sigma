@@ -229,7 +229,7 @@ section h2{
     border:2px solid #2121ff;
     border-radius:6px;
     cursor:pointer;
-    box-shadow: 0 0 8px ;
+    box-shadow: 0 0 8px;
 }
 .game-points:hover{
     background: rgba(33,33,255,0.08);
@@ -239,6 +239,54 @@ section h2{
 .game-points:focus{
     outline: 2px solid #0c0c46;
     outline-offset: 2px;
+}
+
+.big-card{
+    max-width:900px;
+    width:100%;
+    margin:24px auto;
+    background: linear-gradient(180deg, rgba(0,20,0,0.22), rgba(0,0,0,0.30));
+    border-radius:10px;
+    padding:16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-sizing:border-box;
+}
+.big-card .cover{
+    width:100%;
+    height:auto;
+    border-radius:6px;
+    object-fit:cover;
+    display:block;
+}
+.big-card .card-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    padding:0 4px;
+}
+.big-card .big-title{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size:18px;
+    color:var(--text);
+}
+.big-card .big-price{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size:16px;
+    color:var(--neon);
+}
+.big-card .meta{
+    display:flex;
+    justify-content:center;
+    padding-top:6px;
+}
+.big-card .meta .btn{
+    width:auto;
+    padding:10px 28px;
+    font-size:12px;
 }
 
 main form{
@@ -306,6 +354,16 @@ main form button[type="submit"]:hover{
     background: rgba(57,255,20,0.06);
     box-shadow: 0 0 22px rgba(57,255,20,0.14);
     transform: translateY(-2px);
+}
+
+main.centered{
+    text-align: center;
+}
+main.centered .btn,
+main.centered .game-points{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about p{
